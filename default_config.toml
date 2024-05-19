@@ -1,0 +1,180 @@
+title = "Road-Carnage-Config"
+
+[general]
+
+    original_frame_rate=60
+    max_frame_rate=90
+    min_frame_rate=15
+    original_time_speed=1
+    original_time_speed_slow = 0.2
+
+
+[road]
+
+    [road.basics]
+
+        color="*GREY"
+        lines = 5
+        speed=40
+
+
+[car]
+
+    [car.basics]
+
+        color="*RED"
+        speed_variation=0.05
+        horizontal_speed=2
+        length=5
+        width=0.75
+        h=2
+    [car.classic]
+
+        color="*BLUE"
+
+    [car.truck]
+
+        color="*GREEN"
+        horizontal_speed=1
+        length=8
+        width = 0.9
+        h=3
+
+    [car.motorbike]
+
+        color="*YELLOW"
+        speed_variation=0.02
+        horizontal_speed=3
+        length=2
+        width=0.1
+        h=1
+
+    [car.big_truck]
+
+        speed_variation=0.08
+        color="*VIOLET"
+        length = 15
+        width=0.95
+        h=4
+
+[animation]
+
+    [animation.basics]
+
+        type="Animation"
+        life_time=0
+        color="BLACK"
+        basic_parameters = ["type", "life_time", "color", "x", "y"]
+
+
+    [animation.circular_explosion]
+
+        type="CircularExplosion"
+        expansion_life_time=20
+        disappear_life_time=30
+        complete_destruction_size=1800
+
+    [animation.view_move]
+
+        frames=60
+
+
+
+    [animation.circular_effect]
+
+        type="CircularEffect"
+        alpha=40
+        life_time=35
+
+
+    [animation.show_text]
+
+        type="ShowText"
+        color="GREY"
+        policy="Arial"
+        life_time=1.5
+        pop_life_time=0.3
+        shade_life_time=0.5
+        max_size=60
+        min_size=20
+        anti_alias=true
+
+        basics_parameters=["type", "text", "color", "size", "policy"]
+
+
+
+
+
+
+[window]
+
+    [window.basics]
+
+        x=0
+        y=0
+        width="_"
+        height="_"
+        alpha=255
+        background_color="GREY"
+        name="Default Window"
+        writing_color="WHITE"
+        moveable=true
+        selectable=true
+        closable=true
+        border_x=5
+        border_y=5
+
+
+
+
+    [window.main]
+        name="Main"
+        moveable=false
+        selectable=false
+        closable=false
+        border_x=20
+        border_y=20
+        alpha=0
+
+    [window.map]
+        name="Map"
+        background_color="DARK_GREY"
+        moveable=false
+        selectable=false
+        closable=false
+        border_x=20
+        border_y=20
+        alpha=0
+
+    [window.menu]
+        name="Menu"
+        moveable=false
+        selectable=false
+        alpha=0
+
+
+
+[button]
+
+    [button.classic]
+
+        label="Button"
+        height=100
+        width=250
+        line_color="LIGHT_GREY"
+        unclicked_color="DARK_GREY_1"
+        under_mouse_color="DARK_GREY_2"
+        clicked_color="DARK_GREY_3"
+        value=0
+        policy="monospace"
+        size=30
+
+
+    [button.multi]
+
+        key="None"
+        clicked=false
+
+
+    [button.solo]
+
